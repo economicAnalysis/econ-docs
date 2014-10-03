@@ -1,0 +1,30 @@
+# NOT USED. PLACE IN ./ssh/config
+
+
+Host gun-staging
+  HostName gun-staging-az.cloudapp.net
+  Port 22
+  User azureuser
+  IdentityFile ~/.ssh/azcompgun
+
+Host gun-local-2
+  HostName 127.0.0.1
+  User vagrant
+  Port 22300
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile /Users/azavadil/.vagrant.d/insecure_private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+
+Host econ-local
+  HostName 127.0.0.1
+  User vagrant
+  Port 22300
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile /Users/azavadil/.vagrant.d/insecure_private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
