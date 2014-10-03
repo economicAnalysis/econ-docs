@@ -14,11 +14,3 @@ repos from github we need to put the deployment keys onto the vagrant box. Use
 scp to move the deployment key onto the vagrant box. Once the key is on the vagrant
 box, ssh into the box and move the key to `/home/econ/.ssh`. The deployment
 key location (on the vagrant box) is specified in [the linked playbook] (https://github.com/economicAnalysis/econ-ansible/blob/master/playbooks/app-db/deploy-build-db.yml)
-
-## move the git deployment ssh key onto vagrant
-we're gonig to automatically pull down repos from github. In order to pull down
-repos from github we need to put the deployment keys onto the vagrant box. Use 
-scp to move the deployment key onto the vagrant box. Once the key is on the vagrant
-box ssh into the box and move the key to `'/home/econ/.ssh'. The location that
-vagrant will look for the deployment key is specified in the git command
-[see the linked playbook] (https://github.com/economicAnalysis/econ-ansible/blob/master/playbooks/app-db/deploy-build-db.yml)
